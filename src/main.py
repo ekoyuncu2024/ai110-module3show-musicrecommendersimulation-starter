@@ -1,33 +1,28 @@
-"""
-Command line runner for the Music Recommender Simulation.
+"""Command-line demonstration of the music recommendation system."""
 
-This file helps you quickly run and test your recommender.
+from pathlib import Path
+from .recommender import load_songs, recommend_songs
 
-You will implement the functions in recommender.py:
-- load_songs
-- score_song
-- recommend_songs
-"""
+CATALOG = Path(__file__).resolve().parent.parent / "data" / "songs.csv"
 
-from recommender import load_songs, recommend_songs
+PROFILES = {
+    "Happy Pop": {"genre": "pop", "mood": "happy", "energy": 0.80},
+    "High-Energy Pop": {"genre": "pop", "mood": "intense", "energy": 0.93},
+    "Chill Lofi": {"genre": "lofi", "mood": "chill", "energy": 0.35},
+    "Intense Rock": {"genre": "rock", "mood": "intense", "energy": 0.92},
+    "Conflicting Taste (Sad EDM)": {"genre": "edm", "mood": "sad", "energy": 0.90},
+}
 
 
 def main() -> None:
-    songs = load_songs("data/songs.csv") 
-
-    # Starter example profile
-    user_prefs = {"genre": "pop", "mood": "happy", "energy": 0.8}
-
-    recommendations = recommend_songs(user_prefs, songs, k=5)
-
-    print("\nTop recommendations:\n")
-    for rec in recommendations:
-        # You decide the structure of each returned item.
-        # A common pattern is: (song, score, explanation)
-        song, score, explanation = rec
-        print(f"{song['title']} - Score: {score:.2f}")
-        print(f"Because: {explanation}")
-        print()
+    """Print top-five recommendations for several different music tastes."""
+    songs = load_songs(str(CATALOG))
+    print(f"Loaded songs: {len(songs)}")
+    for name, prefs in PROFILES.items():
+        print(f"\n{name} (genre={prefs['genre']}, mood={prefs['mood']}, energy={prefs['energy']:.2f})")
+        for index, (song, score, reasons) in enumerate(recommend_songs(prefs, songs, k=5), start=1):
+            print(f"  {index}. {song['title']} - Score: {score:.2f}")
+            print(f"     Because: {reasons}")
 
 
 if __name__ == "__main__":

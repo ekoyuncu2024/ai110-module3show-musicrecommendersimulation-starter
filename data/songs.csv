@@ -9,3 +9,11 @@ id,title,artist,genre,mood,energy,tempo_bpm,valence,danceability,acousticness
 8,Night Drive Loop,Neon Echo,synthwave,moody,0.75,110,0.49,0.73,0.22
 9,Focus Flow,LoRoom,lofi,focused,0.40,80,0.59,0.60,0.78
 10,Rooftop Lights,Indigo Parade,indie pop,happy,0.76,124,0.81,0.82,0.35
+11,After the Rain,Cedar Harbor,folk,calm,0.24,82,0.52,0.36,0.94
+12,Blue Notebook,Westbound Lines,hip-hop,focused,0.62,96,0.63,0.78,0.17
+13,Electric Summer,Silver Static,edm,happy,0.95,138,0.88,0.91,0.04
+14,Quiet Movement,North Strings,classical,relaxed,0.19,66,0.45,0.18,0.98
+15,Street Festival,Sol y Mar,latin,happy,0.71,112,0.92,0.89,0.26
+16,Open Highway,The Dust Trails,country,hopeful,0.59,104,0.76,0.64,0.70
+17,Steel Horizon,Iron Atlas,metal,intense,0.98,174,0.31,0.49,0.02
+18,Last Train Home,Low Tide,indie,sad,0.39,87,0.24,0.47,0.76
