@@ -1,0 +1,56 @@
+
+Happy Pop
+Before (genre=2, mood=1, energy=1):
+  1. Sunrise City (3.98)
+  2. Gym Hero (2.87)
+  3. Rooftop Lights (1.96)
+  4. Street Festival (1.91)
+  5. Electric Summer (1.85)
+After (genre=1, mood=1, energy=2):
+  1. Sunrise City (3.96)
+  2. Rooftop Lights (2.92)
+  3. Street Festival (2.82)
+  4. Gym Hero (2.74)
+  5. Electric Summer (2.70)
+
+Chill Lofi
+Before (genre=2, mood=1, energy=1):
+  1. Library Rain (4.00)
+  2. Midnight Coding (3.93)
+  3. Focus Flow (2.95)
+  4. Spacewalk Thoughts (1.93)
+  5. Coffee Shop Stories (0.98)
+After (genre=1, mood=1, energy=2):
+  1. Library Rain (4.00)
+  2. Midnight Coding (3.86)
+  3. Focus Flow (2.90)
+  4. Spacewalk Thoughts (2.86)
+  5. Coffee Shop Stories (1.96)
+
+Intense Rock
+Before (genre=2, mood=1, energy=1):
+  1. Storm Runner (3.99)
+  2. Gym Hero (1.99)
+  3. Steel Horizon (1.94)
+  4. Electric Summer (0.97)
+  5. Sunrise City (0.90)
+After (genre=1, mood=1, energy=2):
+  1. Storm Runner (3.98)
+  2. Gym Hero (2.98)
+  3. Steel Horizon (2.88)
+  4. Electric Summer (1.94)
+  5. Sunrise City (1.80)
+
+Conflicting Taste (Sad EDM)
+Before (genre=2, mood=1, energy=1):
+  1. Electric Summer (2.95)
+  2. Last Train Home (1.49)
+  3. Storm Runner (0.99)
+  4. Gym Hero (0.97)
+  5. Sunrise City (0.92)
+After (genre=1, mood=1, energy=2):
+  1. Electric Summer (2.90)
+  2. Storm Runner (1.98)
+  3. Last Train Home (1.98)
+  4. Gym Hero (1.94)
+  5. Sunrise City (1.84)
